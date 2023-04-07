@@ -1,0 +1,126 @@
+:root {
+    --colorbackground: #FFFFFF;
+    --colorbackgroundtwo: #F7F7F7;
+    --colorbackgraundblack: #000000;
+
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0 auto;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #555555;
+    background-color: var(--colorbackground);
+}
+
+.logo {}
+
+.header-nav {}
+
+.header-ul {}
+
+.header-li {}
+
+.head-batton {}
+
+.sec-heir-salon {}
+
+.ul-heir-salon {}
+
+.li-heir-salon {}
+
+.heir-pargraph {}
+
+.heir-title {}
+
+.heir-pargraph-fust {}
+
+.about {}
+
+.ul-about {}
+
+.li-about {}
+
+.about-paragraph {}
+
+.about-title {}
+
+.about-paragra {}
+
+.button {}
+
+.price {}
+
+.price-paragraph {}
+
+.price-title {}
+
+.price-ul {}
+
+.price-ul-li {}
+
+.advantages {}
+
+.advantages-ul {}
+
+.advantages-ul-li {}
+
+.advantages-paragraph {}
+
+.advantages-title {}
+
+.personnel {}
+
+.personnel-paragraph {}
+
+.personnel-title {}
+
+.personnel-ul {}
+
+.personnel-ul-li {}
+
+.galery {}
+
+.galery-paragraph {}
+
+.galery-title {}
+
+.galery-ul {}
+
+.galery-li {}
+
+.contact {}
+
+.contact-title {}
+
+.contact-adress {}
+
+.contact-ul {}
+
+.contact-li {}
+
+.contact-paragraph {}
+
+.footer-copir {}
+
+.footer-ul {}
+
+.footer-li {}
