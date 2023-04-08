@@ -2,7 +2,11 @@
     --colorbackground: #FFFFFF;
     --colorbackgroundtwo: #F7F7F7;
     --colorbackgraundblack: #000000;
-
+    --colortextmin: #303030;
+    --colortextblackbackgr: #9DA4BD;
+    --textcolorstand: #555555;
+    --spessialtext: rgba(157, 164, 189, 0.6);
+    --uniqbutton: #FF6C00;
 }
 
 
@@ -27,31 +31,105 @@ img {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    color: #555555;
+    color: var(--textcolorstand);
     background-color: var(--colorbackground);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header {
+    background-color: var(--colorbackgraundblack);
+
+}
+
+.header-tel {
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--colorbackground);
 }
 
 .logo {}
 
-.header-nav {}
+.header-nav {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: var(--colorbackground);
+}
 
 .header-ul {}
 
 .header-li {}
 
-.head-batton {}
+.head-batton {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--colorbackground);
+    border: 1px solid var(--uniqbutton);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
 
-.sec-heir-salon {}
+.head-batton.main {
+    color: var(--colorbackgraundblack);
+}
+
+.sec-heir-salon {
+    background-color: var(--colorbackgraundblack);
+}
 
 .ul-heir-salon {}
 
-.li-heir-salon {}
+.li-heir-salon {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--colortextmin);
+}
 
-.heir-pargraph {}
+.heir-pargraph {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--spessialtext);
+}
 
-.heir-title {}
+.heir-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: 0.05em;
 
-.heir-pargraph-fust {}
+    color: var(--colorbackground);
+}
+
+.heir-pargraph-fust {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: var(--colortextblackbackgr);
+}
 
 .about {}
 
@@ -59,21 +137,57 @@ body {
 
 .li-about {}
 
-.about-paragraph {}
+.about-paragraph {
+    font-size: 11px;
+    color: var(--colortextmin);
+}
 
-.about-title {}
+.about-title {
+    font-family: 'Raleway';
+    font-size: 42px;
+    letter-spacing: 0.05em;
+    color: var(--colortextmin);
+}
 
-.about-paragra {}
+.about-paragraphbig {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+
+.about-paragra {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+}
 
 .button {}
 
-.price {}
+.price {
+    background-color: var(--colorbackgraundblack);
+}
 
-.price-paragraph {}
+.price-paragraph {
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--spessialtext);
+}
 
-.price-title {}
+.price-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 0.05em;
+    color: var(--colorbackground);
+}
 
-.price-ul {}
+.price-ul {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: var(--colortextblackbackgr);
+}
 
 .price-ul-li {}
 
@@ -83,15 +197,52 @@ body {
 
 .advantages-ul-li {}
 
-.advantages-paragraph {}
+.advantages-paragraph-cl {
+    font-size: 42px;
+    letter-spacing: 0.05em;
+    color: var(--colortextmin);
+}
 
-.advantages-title {}
+.advantages-paragraph-prem {
+    font-size: 11px;
+    color: var(--colortextmin);
+}
 
-.personnel {}
 
-.personnel-paragraph {}
+.advantages-paragraph {
+    font-size: 11px;
+    color: var(--colortextmin);
+}
 
-.personnel-title {}
+.advantages-title {
+    font-family: 'Raleway';
+    font-size: 42px;
+    letter-spacing: 0.05em;
+    color: var(--colortextmin);
+}
+
+.personnel {
+    background-color: var(--colorbackgroundtwo);
+}
+
+.personnel-paragraph {
+    font-size: 11px;
+    color: var(--colortextmin);
+}
+
+.personnel-title {
+    font-family: 'Raleway';
+    font-size: 42px;
+    letter-spacing: 0.05em;
+    color: var(--colortextmin);
+}
+
+.personnel-profession {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--uniqbutton);
+}
+
 
 .personnel-ul {}
 
@@ -99,7 +250,10 @@ body {
 
 .galery {}
 
-.galery-paragraph {}
+.galery-paragraph {
+    font-size: 11px;
+    color: var(--colortextmin);
+}
 
 .galery-title {}
 
@@ -107,9 +261,16 @@ body {
 
 .galery-li {}
 
-.contact {}
+.contact {
+    background-color: var(--colorbackgraundblack);
+}
 
-.contact-title {}
+.contact-title {
+    font-family: 'Raleway';
+    font-size: 42px;
+    letter-spacing: 0.05em;
+    color: var(--colorbackground);
+}
 
 .contact-adress {}
 
@@ -119,8 +280,21 @@ body {
 
 .contact-paragraph {}
 
-.footer-copir {}
+.contact-paragraph-working {
+    font-size: 11px;
+    color: var(--spessialtext);
+}
 
-.footer-ul {}
+.footer-copir {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--colortextblackbackgr);
+}
+
+.footer-ul {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--colortextmin);
+}
 
 .footer-li {}
