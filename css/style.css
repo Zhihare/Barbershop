@@ -547,20 +547,53 @@ sup {
 
 .contact {
     background-color: var(--colorbackgraundblack);
+    padding-top: var(--padding130);
+    padding-bottom: var(--padding130);
+
+}
+
+.contact-all {
+    display: flex;
+
+}
+
+.contacts-registr {
+    width: calc(100%/2);
+}
+
+.contact-conteiner {
+    padding-left: 100px;
 }
 
 .contact-title {
+    margin-bottom: 42px;
+
     font-family: 'Raleway';
-    font-size: var(--textsize42);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
     letter-spacing: 0.05em;
+    font-size: var(--textsize42);
     color: var(--colorbackground);
 }
 
 .contact-adress {}
 
-.contact-ul {}
+.contact-ul {
+    margin-bottom: 66px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-.contact-li {}
+}
+
+.contact-li {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+}
 
 .contact-a {
     font-weight: 700;
@@ -569,20 +602,53 @@ sup {
     color: var(--colortextblackbackgr);
 }
 
-.contact-paragraph {}
+.contact-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+}
 
 .contact-paragraph-working {
+    margin-bottom: var(--margin20);
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     font-size: var(--textsize11);
     color: var(--spessialtext);
 }
 
+.footer-cont {
+    display: flex;
+    margin-right: auto;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 55px;
+}
+
 .footer-copir {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
     font-size: var(--textsize11);
     letter-spacing: 0.2em;
     color: var(--colortextblackbackgr);
 }
 
 .footer-ul {
+    display: flex;
+    gap: 40px;
+    margin-right: 0;
+    margin-left: auto;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
     font-size: var(--textsize11);
     letter-spacing: 0.2em;
     color: var(--colortextmin);
