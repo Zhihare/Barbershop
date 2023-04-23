@@ -23,7 +23,9 @@
     <header class="header">
         <div class="conteiner headcont">
             <a class="logo link" href="./index.html">
-                <img src="./image/Logo.svg" alt="barbershop logo" width="76" height="76" />
+                <svg class="header-svg" width="68" height="56">
+                    <use href="./galery/icon.svg#Logo"></use>
+                </svg>
             </a>
             <nav class="header-nav list">
                 <ul class="header-ul list">
@@ -42,17 +44,26 @@
     <main>
         <section class="sec-heir-salon">
             <div class="conteiner">
-                <ul class="ul-heir-salon">
+                <p class="heir-pargraph cont-marg parag-befor-black">A hair salon for men in Kyiv</p>
+                <h1 class="heir-title cont-marg">BarberShop</h1>
+                <p class="heir-pargraph-fust cont-marg">Ми експерти у модних чоловічих стрижках.
+                    Працюємо швидко, обережно та зі смаком.</p>
+                <ul class="ul-heir-salon list parag-befor">
                     <li class="li-heir-salon"><a class="link heir-salon-a" href="http://instagram.com" target="_blank"
                             rer="noopener noreferrer">instagram</a></li>
                     <li class="li-heir-salon"><a class="link heir-salon-a" href="http://youtube.com" target="_blank"
                             rer="noopener noreferrer">youtube</a></li>
                 </ul>
-                <p class="heir-pargraph cont-marg">A hair salon for men in Kyiv</p>
-                <h1 class="heir-title cont-marg">BarberShop</h1>
-                <p class="heir-pargraph-fust cont-marg">Ми експерти у модних чоловічих стрижках.
-                    Працюємо швидко, обережно та зі смаком.</p>
             </div>
+            <ul class="batton-ul">
+                <li>
+                    <batton class="heir-batton" type=batton></batton>
+                </li>
+                <li>
+                    <batton class="heir-batton" type=batton></batton>
+                </li>
+
+            </ul>
         </section>
         <section class="about conteiner">
             <div class="about-cont">
@@ -63,7 +74,7 @@
                 </ul>
 
                 <div class="about-sector-text">
-                    <p class="about-paragraph">ПРО НАС</p>
+                    <p class="about-paragraph parag-befor">ПРО НАС</p>
                     <h2 class="about-title">Найкращий Барбершоп твого міста</h2>
                     <p class="about-paragraphbig">Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до
                         нас.
@@ -79,7 +90,7 @@
         </section>
         <section class="price">
             <div class="price-cont conteiner">
-                <p class="price-paragraph">Проведи час у компанії кращих майстрів</p>
+                <p class="price-paragraph parag-befor-black">Проведи час у компанії кращих майстрів</p>
                 <h2 class="price-title">Послуги та ціни</h2>
                 <div class="price-contein-peis">
                     <ul class="price-ul price-contein-peis">
@@ -138,7 +149,7 @@
                     </li>
                 </ul>
                 <div class="advantages-second-block">
-                    <p class="advantages-paragraph">стара традиційна школа</p>
+                    <p class="advantages-paragraph parag-befor">стара традиційна школа</p>
                     <h2 class="advantages-title">Чому приходять саме до нас?</h2>
                     <p class="advantages-paragraph-text">Про нас говорять лише добре. Але краще 1 раз побачити і
                         відчути, ніж 10 разів прочитати.</p>
@@ -147,30 +158,129 @@
         </section>
         <section class="personnel">
             <div class="personnel-cont conteiner">
-                <p class="personnel-paragraph">для справжніх шанувальників атмосфери</p>
+                <p class="personnel-paragraph parag-befor-black">для справжніх шанувальників атмосфери</p>
                 <h2 class="personnel-title">Наші майстри</h2>
                 <ul class="personnel-ul">
                     <li class="personnel-ul-li list">
                         <img src="./person/img1.jpg" alt="John Smith" width="370" height="346">
                         <p class="personnel-name">John Smith</p>
                         <p class="personnel-profession">Extreme Barber</p>
+                        <ul class="personel-social list">
+                            <li class="personel-social-list">
+                                <a class="social-list" href="http://instagram.com" target="_blank" rel="noo
+                                 noreferrer">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="personel-social-list">
+                                <a class="social-list" href="http://twitter.com" target="_blank" rel="noo
+                                noreferrer">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="personel-social-list">
+                                <a class="social-list" href="http://facebook.com" target="_blank" rel="noo
+                              noreferrer">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#facebook-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="personel-social-list">
+                                <a class="social-list" href="">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="personnel-ul-li list">
                         <img src="./person/img2.jpg" alt="Michele Doe" width="370" height="346">
                         <p class="personnel-name">Michele Doe</p>
                         <p class="personnel-profession">Extreme Barber</p>
+                        <ul class="personel-social list">
+                            <li class="personel-social-list">
+                                <a class="social-list" href="http://instagram.com" target="_blank" rel="noo
+                                                         noreferrer">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="personel-social-list">
+                                <a class="social-list" href="http://twitter.com" target="_blank" rel="noo
+                                                        noreferrer">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="personel-social-list">
+                                <a class="social-list" href="http://facebook.com" target="_blank" rel="noo
+                                                      noreferrer">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#facebook-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="personel-social-list">
+                                <a class="social-list" href="">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="personnel-ul-li list">
                         <img src="./person/img3.jpg" alt="Alan Black" width="370" height="346">
                         <p class="personnel-name">Alan Black</p>
                         <p class="personnel-profession">Extreme Barber</p>
+                        <ul class="personel-social list">
+                            <li class="personel-social-list">
+                                <a class="social-list" href="http://instagram.com" target="_blank" rel="noo
+                                                         noreferrer">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="personel-social-list">
+                                <a class="social-list" href="http://twitter.com" target="_blank" rel="noo
+                                                        noreferrer">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="personel-social-list">
+                                <a class="social-list link" href="http://facebook.com" target="_blank" rel="noo
+                                                      noreferrer">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#facebook-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="personel-social-list">
+                                <a class="social-list" href="">
+                                    <svg class="personel-icon" width="20" height="20">
+                                        <use href="./galery/icon.svg#linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="galery">
             <div class="galery-cont conteiner">
-                <p class="galery-paragraph">Латинською мовою "барба" означає "борода"</p>
+                <p class="galery-paragraph parag-befor">Латинською мовою "барба" означає "борода"</p>
                 <h2 class="galery-title visually-hidden">galery</h2>
                 <ul class="galery-ul">
                     <li class="galery-li list"><img src="./galery/Rectangle 25.jpg" alt="" width="270" height="360">
@@ -196,19 +306,31 @@
                         <ul class="contact-ul">
                             <li class="contact-li list">
                                 <a class="link contact-a" href="https://goo.gl/maps/hGEgUm3vzuoh4RWCA" target="_blank"
-                                    rer="noopener noreferrer">вул.
+                                    rer="noopener noreferrer">
+                                    <svg class="contact-icon" width="24" height="24">
+                                        <use href="/galery/icon.svg#map-pin"></use>
+                                    </svg>
+                                    вул.
                                     Василькова, 7А <br>
                                     Київ, 08132</a>
                             </li>
                             <li class="contact-li list">
-                                <a class="link contact-a" href="tel:+380441111111">+38 044 111 11 11</a>
+                                <a class="link contact-a" href="tel:+380441111111">
+                                    <svg class="contact-icon" width="24" height="24">
+                                        <use href="/galery/icon.svg#phone"></use>
+                                    </svg>
+                                    +38 044 111 11 11</a>
                             </li>
                             <li class="contact-li list">
-                                <a class="link contact-a" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                                <a class="link contact-a" href="mailto:barbershop@email.com">
+                                    <svg class="contact-icon" width="24" height="24">
+                                        <use href="/galery/icon.svg#mail"></use>
+                                    </svg>
+                                    barbershop@email.com</a>
                             </li>
                         </ul>
                     </address>
-                    <p class="contact-paragraph-working">часи роботи</p>
+                    <p class="contact-paragraph-working parag-befor-black">часи роботи</p>
                     <p class="contact-paragraph">Щоденно з <time datetime="9:00">9:00</time> до <time
                             datetime="22:00">22:00</time> </p>
                 </div>
@@ -218,7 +340,7 @@
     <footer>
         <div class="footer-cont conteiner">
             <p class="footer-copir">&#169 Copyright 2020</p>
-            <ul class="footer-ul">
+            <ul class="footer-ul parag-befor">
                 <li class="footer-li list"><a class="link footer-a" href="http://instagram.com" target="_blank"
                         rer="noopener noreferrer">instagram</a>
                 </li>
