@@ -359,14 +359,17 @@ body {
     padding-top: var(--padding130);
     padding-bottom: var(--padding130);
 
-    background-color: var(--colorbackgraundblack);
+    max-width: 1280px;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../background/img\ \(1\).jpg), var(--colorbackgraundblack);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .price-cont {}
 
-.price-contein-peis {
-    display: flex;
-}
 
 .price-paragraph {
     margin-bottom: var(--margin20);
@@ -407,16 +410,37 @@ body {
     color: var(--colortextblackbackgr);
 }
 
-.price-for-category-ul {
+.price-contein-peis {
     display: flex;
-    flex-direction: column;
-    gap: var(--margin20);
 }
 
-.price-for-category {
-    width: 585px;
+.price-for-category-ul {
+    width: 580px;
     padding: 40px 30px;
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-list {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+    flex-direction: row-reverse;
+}
+
+.price-list:last-child {
+    margin-bottom: 0;
+}
+
+.price-list::before {
+    content: '';
+    flex-grow: 1;
+
+    height: 1px;
+    background: rgba(157, 164, 189, 0.12);
+}
+
+.price-before {
+    order: -2;
 }
 
 /**
@@ -437,13 +461,20 @@ body {
     max-width: 370px;
     display: flex;
     flex-wrap: wrap;
-    gap: var(--gapnav30);
+    align-items: flex-start;
+
 }
 
 .advantages-ul-li {
     width: 170px;
     background-color: var(--colorbackgroundtwo);
     padding: 24px 20px;
+    box-shadow: 4px 5px var(--uniqbutton)
+}
+
+.advantages-ul-li:nth-child(2n) {
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 
@@ -654,9 +685,6 @@ sup {
 */
 .contact {
     background-color: var(--colorbackgraundblack);
-    padding-top: var(--padding130);
-    padding-bottom: var(--padding130);
-
 }
 
 .contact-all {
@@ -669,7 +697,12 @@ sup {
 }
 
 .contact-conteiner {
+    width: calc(100%/2);
     padding-left: 100px;
+    padding-top: var(--padding130);
+    padding-bottom: var(--padding130);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../background/Bg.jpg);
+    background-size: cover;
 }
 
 .contact-title {
