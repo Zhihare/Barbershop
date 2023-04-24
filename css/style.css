@@ -683,9 +683,7 @@ sup {
   | contact
   |============================
 */
-.contact {
-    background-color: var(--colorbackgraundblack);
-}
+.contact {}
 
 .contact-all {
     display: flex;
@@ -693,6 +691,7 @@ sup {
 }
 
 .contacts-registr {
+    background-color: var(--colorbackgraundblack);
     width: calc(100%/2);
 }
 
