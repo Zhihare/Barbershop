@@ -37,7 +37,7 @@
             </nav>
             <div class="headbutt">
                 <a class="link header-tel" href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
-                <button class="head-batton" type="button">онлайн-запис</button>
+                <button class="head-batton" type="button" data-modal-open>онлайн-запис</button>
             </div>
         </div>
     </header>
@@ -351,6 +351,39 @@
             </ul>
         </div>
     </footer>
+    <!--Modal windov-->
+    <div class="backdrop is-hidden" data-modal>
+        <button class="modal-close-button" type="button" data-modal-close>
+            <svg class="close" width="8" height="8">
+                <use href=""></use>
+            </svg>
+        </button>
+        <p class="modal-title"></p>
+        <form class="modal-form">
+            <label class="text-in-label" for="Name">
+                <input type="text" name="Name">
+            </label>
+            <label class="text-in-label" for="Email">
+                <input type="email" name="Email">
+            </label>
+            <label class="text-in-label" for="tel">
+                <input type="tel" name="tel"></label>
+            <label class="comment text-in-label" for="Comment">
+                <textarea class="comment-input" name="Comment">
+       </label>
+        <div class="checkbox-section">
+            <input class="checkbox-accept" type="checkbox" name="accept" id="accept">
+            <label class="checkbox-le text-diz" for="accept">I accept the terms and conditions of the <a class="link-politica"
+                    href="">Privacy
+                    Policy</a>
+            </label>
+        </div>
+        <button class="modal-button" type="submit">
+            Send
+        </button>
+            </form>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
