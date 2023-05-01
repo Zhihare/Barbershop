@@ -353,36 +353,53 @@
     </footer>
     <!--Modal windov-->
     <div class="backdrop is-hidden" data-modal>
-        <button class="modal-close-button" type="button" data-modal-close>
-            <svg class="close" width="8" height="8">
-                <use href=""></use>
-            </svg>
-        </button>
-        <p class="modal-title"></p>
-        <form class="modal-form">
-            <label class="text-in-label" for="Name">
-                <input type="text" name="Name">
-            </label>
-            <label class="text-in-label" for="Email">
-                <input type="email" name="Email">
-            </label>
-            <label class="text-in-label" for="tel">
-                <input type="tel" name="tel">
-            </label>
-            <label class="comment text-in-label" for="Comment">
-                <textarea class="comment-input" name="Comment" rows="4" placeholder="Text input"></textarea>
-            </label>
-            <div class="checkbox-section">
-                <input class="checkbox-accept" type="checkbox" name="accept" id="accept">
-                <label class="checkbox-le text-diz" for="accept">I accept the terms and conditions of the <a
-                        class="link-politica" href="">Privacy
-                        Policy</a>
-                </label>
-            </div>
-            <button class="modal-button" type="submit">
-                Send
+        <div class="modal">
+            <button class="modal-close-button" type="button" data-modal-close>
+                <svg class="close" width="8" height="8">
+                    <use href="./galery/icon.svg#close-black-18dp-2-1"></use>
+                </svg>
             </button>
-        </form>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <label class="text-in-label" for="Name"><span class="user-date-title">Name</span>
+                    <div class="Name-inf">
+                        <input class="input-text" type="text" name="Name">
+                        <svg class="name-icon" width="18" height="24">
+                            <use href="./galery/icon.svg#person-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="text-in-label" for="Email"><span class="user-date-title">E-mail</span>
+                    <div class="Name-inf">
+                        <input class="input-text" type="email" name="Email">
+                        <svg class="name-icon" width="18" height="24">
+                            <use href="./galery/icon.svg#phone-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="text-in-label" for="tel"><span class="user-date-title">Phone</span>
+                    <div class="Name-inf">
+                        <input class="input-text" type="tel" name="tel">
+                        <svg class="name-icon" width="18" height="24">
+                            <use href="./galery/icon.svg#email-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="comment text-in-label" for="Comment"><span class="user-date-title">Comment</span>
+                    <textarea class="comment-input" name="Comment" rows="4" placeholder="Text input"></textarea>
+                </label>
+                <div class="checkbox-section">
+                    <input class="checkbox-accept" type="checkbox" name="accept" id="accept">
+                    <label class="checkbox-le text-diz" for="accept">I accept the terms and conditions of the <a
+                            class="link-politica" href="">Privacy
+                            Policy</a>
+                    </label>
+                </div>
+                <button class="modal-button" type="submit">
+                    Send
+                </button>
+            </form>
+        </div>
     </div>
     <script src="./modal.js"></script>
 </body>
