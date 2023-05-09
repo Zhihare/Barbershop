@@ -795,7 +795,6 @@ sup {
 
 .name-anim {
     position: absolute;
-    top: 0;
     left: 0;
 
     font-size: 11px;
@@ -830,11 +829,11 @@ sup {
     border-color: var(--colorbackground);
 }
 
-/* .coment-input-mess:focus+.name-anim,
+.coment-input-mess:focus+.name-anim,
 .coment-input-mess:not(:placeholder-shown)+.name-anim {
     transform: translateY(-100%) scale(0.8);
     color: #fff;
-} */
+}
 
 
 .footer-form-button {}
