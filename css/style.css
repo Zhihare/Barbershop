@@ -153,6 +153,7 @@ body {
     align-items: center;
     min-width: 160px;
     min-height: 40px;
+    cursor: pointer;
 
     font-size: var(--textsize12);
     letter-spacing: 0.09em;
@@ -392,6 +393,7 @@ body {
     align-items: center;
     min-width: 160px;
     min-height: 40px;
+    cursor: pointer;
 
     font-size: var(--textsize12);
     letter-spacing: 0.09em;
