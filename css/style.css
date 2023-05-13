@@ -216,10 +216,16 @@ body {
     border-radius: 25px;
     background-color: var(--backgroundcolorbatton);
 
-    transition-property: background-color, color;
+    /* transition-property: background-color, color;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.13, 0.72, 1, 1);
-    transition-delay: 100ms;
+    transition-delay: 100ms; */
+    animation-name: changeBgColor;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+
 }
 
 .batton-in-price {
@@ -231,6 +237,9 @@ body {
 .head-batton:focus {
     background-color: var(--uniqbutton);
     color: var(--colorbackgraundblack);
+    animation-play-state: paused;
+
+
 }
 
 .head-batton.main {
@@ -245,7 +254,22 @@ body {
 .head-batton.main:hover,
 .head-batton.main:focus {
     background-color: var(--uniqbutton);
-    color: var(--colorbackgroundtwo)
+    color: var(--colorbackgroundtwo);
+
+}
+
+@keyframes changeBgColor {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    3% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /**
