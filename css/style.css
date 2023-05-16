@@ -14,6 +14,7 @@
     --textsize11: 11px;
     --textsize12: 12px;
     --textsize14: 14px;
+    --textsize16: 16px;
     --textsize18: 18px;
     --textsize42: 42px;
     --textsize72: 72px;
@@ -46,7 +47,7 @@ ul {
 img {
     display: block;
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 body {
@@ -60,7 +61,6 @@ body {
     /*Phone*/
     min-width: 320px;
     max-width: 428px;
-    padding: 0 31px;
     margin: 0 auto;
 
     outline: 2px solid red;
@@ -72,7 +72,7 @@ body {
 @media only screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding: 0 39px;
+
     }
 }
 
@@ -143,12 +143,13 @@ body {
 }
 
 .logo {
-    /* margin-right: 31px; */
+    margin-left: 31px;
     /* margin-left: 55px; */
 }
 
 @media only screen and (min-width: 768px) {
     .logo {
+        margin-left: 39px;
         margin-right: 70px;
     }
 }
@@ -348,8 +349,20 @@ body {
   |============================
 */
 .sec-heir-salon {
-    margin-bottom: 130px;
+    margin-bottom: 86px;
 
+}
+
+@media only screen and (min-width: 768px) {
+    .sec-heir-salon {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .sec-heir-salon {
+        margin-bottom: 130px;
+    }
 }
 
 .all-side {
@@ -375,9 +388,9 @@ body {
 .right-side {
     flex-grow: 1;
 
-    padding-top: 272px;
-    padding-left: 100px;
-    padding-bottom: 201px;
+    padding-top: 208px;
+    padding-left: 31px;
+    padding-bottom: 183px;
 
     background-color: var(--colorbackgraundblack);
     background: url(../background/Slider.jpg);
@@ -385,6 +398,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
+}
+
+@media only screen and (min-width: 768px) {
+    .right-side {
+        padding-top: 272px;
+        padding-left: 120px;
+        padding-bottom: 245px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .right-side {
+        padding-left: 100px;
+        padding-bottom: 206px;
+    }
 }
 
 .ul-heir-salon {
@@ -458,7 +486,7 @@ body {
     margin-bottom: var(--margin20);
 
     font-family: 'Raleway';
-    font-size: var(--textsize72);
+    font-size: 48px;
     letter-spacing: 0.05em;
     color: var(--colorbackground);
 
@@ -466,12 +494,24 @@ body {
     transition: transform 400ms;
 }
 
+@media only screen and (min-width: 1200px) {
+    .heir-title {
+        font-size: var(--textsize72);
+    }
+}
+
 .heir-pargraph-fust {
     max-width: 450px;
 
-    font-size: var(--textsize18);
+    font-size: var(--textsize16);
     letter-spacing: 0.02em;
     color: var(--colortextblackbackgr);
+}
+
+@media only screen and (min-width: 1200px) {
+    .heir-pargraph-fust {
+        font-size: var(--textsize18);
+    }
 }
 
 .batton-ul {
@@ -499,24 +539,59 @@ body {
   | about
   |============================
 */
-.about {}
+.about {
+    padding-bottom: 84px;
+}
+
+@media only screen and (min-width: 768px) {
+    .about {
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about {
+        padding-bottom: 130px;
+    }
+}
 
 .about-cont {
     display: flex;
     gap: var(--gapnav30);
-    padding-bottom: 130px;
 }
 
 .ul-about {
-    overflow: hidden;
-    display: flex;
-    gap: var(--gapnav30);
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .ul-about {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gapnav30);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ul-about {
+        flex-wrap: nowrap;
+    }
 }
 
 .li-about {
+    width: 330px;
+    height: 235px;
     overflow: hidden;
     transform: scale(1);
     transition: transform 1900ms;
+}
+
+@media only screen and (min-width: 1200px) {
+    .li-about {
+        width: 270px;
+        height: 445px;
+
+    }
 }
 
 .li-about:hover {
@@ -544,20 +619,34 @@ body {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    line-height: 49px;
+    font-size: 28px;
+    line-height: 1.2;
     letter-spacing: 0.05em;
-    font-size: var(--textsize42);
     color: var(--colortextmin);
 }
 
-.about-paragraphbig {
-    margin-bottom: var(--margin20);
+@media only screen and (min-width: 1200px) {
+    .about-title {
+        font-size: var(--textsize42);
+    }
+}
 
+.about-paragraphbig {
+    margin: 0;
+
+    margin-bottom: var(--margin20);
+    max-width: 500px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    font-size: var(--textsize18);
+    font-size: var(--textsize16);
     letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-paragraphbig {
+        font-size: var(--textsize18)
+    }
 }
 
 .about-paragra {
@@ -1443,6 +1532,7 @@ sup {
 
     margin: 0;
     margin-left: auto;
+    margin-right: 31px;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
