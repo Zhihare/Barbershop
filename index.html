@@ -21,7 +21,7 @@
 
 <body>
     <header class="header">
-        <div class="conteiner headcont">
+        <div class="container headcont">
             <a class="logo link" href="./index.html">
                 <svg class="header-svg" width="68" height="56">
                     <use href="./galery/icon.svg#Logo"></use>
@@ -39,11 +39,18 @@
                 <a class="link header-tel" href="tel:+38 044 111 11 11">+38 044 111 11 11</a>
                 <button class="head-batton" type="button" data-modal-open>онлайн-запис</button>
             </div>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="32" height="32" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
         <section class="sec-heir-salon">
-            <div class="conteiner all-side">
+            <div class="container all-side">
                 <div class="left-side">
                     <ul class="ul-heir-salon list parag-befor">
                         <li class="li-heir-salon"><a class="link heir-salon-a" href="http://instagram.com"
@@ -70,7 +77,7 @@
             </div>
 
         </section>
-        <section class="about conteiner">
+        <!-- <section class="about conteiner">
             <div class="about-cont conteiner">
                 <ul class="ul-about">
                     <li class="li-about list"><img src="./image/img 1.jpg" alt="beard" height="445" width="270"></li>
@@ -92,8 +99,8 @@
                     <button class="head-batton main" type="button" data-modal-open>онлайн-запис</button>
                 </div>
             </div>
-        </section>
-        <section class="price">
+        </section> -->
+        <!-- <section class="price">
             <div class="price-cont conteiner">
                 <p class="price-paragraph parag-befor-black">Проведи час у компанії кращих майстрів</p>
                 <h2 class="price-title">Послуги та ціни</h2>
@@ -128,8 +135,8 @@
 
                 <button class="head-batton batton-in-price" type="button" data-modal-open>онлайн-запис</button>
             </div>
-        </section>
-        <section class="advantages conteiner">
+        </section> -->
+        <!-- <section class="advantages conteiner">
             <div class="advantages-all-block">
                 <ul class="advantages-ul">
                     <li class="advantages-ul-li list">
@@ -156,8 +163,8 @@
                         відчути, ніж 10 разів прочитати.</p>
                 </div>
             </div>
-        </section>
-        <section class="personnel">
+        </section> -->
+        <!-- <section class="personnel">
             <div class="personnel-cont conteiner">
                 <p class="personnel-paragraph parag-befor-black">для справжніх шанувальників атмосфери</p>
                 <h2 class="personnel-title">Наші майстри</h2>
@@ -304,8 +311,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="galery">
+        </section> -->
+        <!-- <section class="galery">
             <div class="galery-cont conteiner">
                 <p class="galery-paragraph parag-befor">Латинською мовою "барба" означає "борода"</p>
                 <h2 class="galery-title visually-hidden">galery</h2>
@@ -320,8 +327,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="contact conteiner">
+        </section> -->
+        <!-- <section class="contact conteiner">
             <div class="contact-all">
                 <div class="contacts-registr">
                     <h2 class="contact-title">Онлайн-запис</h2>
@@ -382,9 +389,9 @@
                             datetime="22:00">22:00</time> </p>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer>
+    <!-- <footer>
         <div class="footer-cont conteiner">
             <p class="footer-copir">&#169 Copyright 2020</p>
             <ul class="footer-ul parag-befor">
@@ -396,7 +403,7 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
     <!--Modal windov-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -447,6 +454,71 @@
             </form>
         </div>
     </div>
+
+    <!-- mobile menu -->
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="close" width="8" height="8">
+                <use href="./images/icon.svg#close-black-18dp-2-1"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+            <li class="mobile-menu-list"><a href="./index.html" class="link-mob-menu current link">Studio</a></li>
+            <li class="mobile-menu-list"><a href="./portfolio.html" class="link-mob-menu  link">Portfolio</a>
+            </li>
+            <li class="mobile-menu-list"><a href="" class="link-mob-menu link">Contacts</a></li>
+        </ul>
+
+        <ul class="mobile-contacts list">
+            <li>
+                <a class="adress-link mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+                <a class="adress-link tel link" href="tel:+110001111111">+11 (000)111-11-11</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-social list">
+            <li class="list footer-links">
+                <a class="footer-icons link" href="">
+                    <svg class="footer-team-icons" width="24" height="24">
+                        <use href="./images/icon.svg#instagram-2">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="list footer-links">
+                <a class="footer-icons link" href="">
+                    <svg class="footer-team-icons" width="24" height="24">
+                        <use href="./images/icon.svg#twitter-1">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="list footer-links">
+                <a class="footer-icons link" href="">
+                    <svg class="footer-team-icons" width="24" height="24">
+                        <use href="./images/icon.svg#facebook-1">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="list footer-links">
+                <a class="footer-icons link" href="">
+                    <svg class="footer-team-icons" width="24" height="24">
+                        <use href="./images/icon.svg#linkedin-1">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div> -->
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./modal.js"></script>
 </body>
 
