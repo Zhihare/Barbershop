@@ -685,8 +685,8 @@ body {
   |============================
 */
 .price {
-    padding-top: var(--padding130);
-    padding-bottom: var(--padding130);
+    padding-top: 84px;
+    padding-bottom: 84px;
 
     max-width: 1280px;
     margin: auto;
@@ -695,6 +695,20 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+
+@media only screen and (min-width: 768px) {
+    .price {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .price {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 }
 
 .price-cont {}
@@ -713,7 +727,7 @@ body {
 }
 
 .price-title {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -741,12 +755,33 @@ body {
 
 .price-contein-peis {
     display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    justify-content: center;
 }
 
-.price-for-category-ul {
-    width: 580px;
-    padding: 40px 30px;
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+@media only screen and (min-width: 1200px) {
+    .price-contein-peis {
+        flex-wrap: nowrap;
+    }
+}
+
+.price-ul-li {
+    width: 418px;
+    padding: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .price-ul-li {
+        width: 690px;
+        padding: 40px 30px;
+    }
+}
+
+.price-for-category-ul {}
+
+.price-ul:first-child {
+    padding-bottom: 0;
 }
 
 .price-list {
@@ -754,6 +789,18 @@ body {
     align-items: baseline;
     margin-bottom: 20px;
     flex-direction: row-reverse;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.1;
+    letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+    .price-list {
+        font-size: 18px;
+        line-height: 1.7;
+    }
 }
 
 .price-list:last-child {
@@ -778,12 +825,35 @@ body {
   |============================
 */
 .advantages {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+@media only screen and (min-width: 768px) {
+    .advantages {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .advantages {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
 }
 
 .advantages-all-block {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 1200px) {
+    .advantages-all-block {
+        flex-wrap: nowrap;
+        flex-direction: inherit;
+    }
 }
 
 .advantages-ul {
@@ -794,11 +864,31 @@ body {
 
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .advantages-ul {
+        max-width: 450px;
+    }
+}
+
+
+
 .advantages-ul-li {
     width: 170px;
     background-color: var(--colorbackgroundtwo);
     padding: 24px 20px;
     box-shadow: 4px 5px var(--uniqbutton)
+}
+
+@media only screen and (min-width: 768px) {
+    .advantages-ul-li {
+        width: 193px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .advantages-ul-li {
+        width: 170px;
+    }
 }
 
 .advantages-ul-li:nth-child(2n) {
@@ -860,11 +950,17 @@ sup {
 
 .advantages-paragraph-text {
     max-width: 500px;
-
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
+    .advantages-paragraph-text {
+        margin: 0;
+        margin-bottom: 44px;
+    }
 }
 
 /**
